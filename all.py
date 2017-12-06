@@ -19,8 +19,9 @@ DISPLAY_BAR = True
 while True:
     if int(light.light()) < 1000:
         BRIGHTNESS = int(int(light.light())/1000)
+        print(BRIGHTNESS)
     else:
-BRIGHTNESS = 1
+        BRIGHTNESS = 1
 while True:
     scrollphathd.clear()
 
