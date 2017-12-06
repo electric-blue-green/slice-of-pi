@@ -108,4 +108,4 @@ while True:
     #
     # 1/10th of a second is accurate enough for a simple clock though :D
     scrollphathd.show()
-    time.sleep(0.1)
+    time.sleep(0.01)
