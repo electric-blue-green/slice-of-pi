@@ -64,13 +64,14 @@ while True:
     if DISPLAY_BAR:
         # Step through 15 pixels to draw the seconds bar
         for y in range(15):
+            BRIGHTNESS = find_light_level()
             # For each pixel, we figure out its brightness by
             # seeing how much of "seconds_progress" is left to draw
             # If it's greater than 1 (full brightness) then we just display 1.
             current_pixel = min(seconds_progress, 1)
 
             # Multiply the pixel brightness (0.0 to 1.0) by our global brightness value
-            scrollphathd.set_pixel(y + 1, 6, current_pixel * int(get_light_level()))
+            scrollphathd.set_pixel(y + 1, 6, current_pixel * BRIGHTNESS
 
             # Subtract 1 now we've drawn that pixel
             seconds_progress -= 1
@@ -81,7 +82,7 @@ while True:
 
     else:
         # Just display a simple dot
-        scrollphathd.set_pixel(int(seconds_progress), 6, int(get_light_level()))
+        scrollphathd.set_pixel(int(seconds_progress), 6, BRIGHTNES
 
     # Display the time (HH:MM) in a 5x5 pixel font
     print(light_level)
@@ -90,7 +91,7 @@ while True:
         x=0, # Align to the left of the buffer
         y=0, # Align to the top of the buffer
         font=font3x5, # Use the font3x5 font we imported above
-        brightness=get_light_level() # Use our global brightness value
+        brightness=findt_light_level() # Use our global brightness value
     )
 
     # int(time.time()) % 2 will tick between 0 and 1 every second.
