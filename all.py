@@ -16,7 +16,7 @@ Press Ctrl+C to exit!
 
 ##  --  Scrollphat Setup
 DISPLAY_BAR = True
-while True:
+def find_light_level()
     if int(light.light()) < 10:
         light_level = 0.05
     elif int(light.light()) < 50:
@@ -90,7 +90,7 @@ while True:
         x=0, # Align to the left of the buffer
         y=0, # Align to the top of the buffer
         font=font3x5, # Use the font3x5 font we imported above
-        brightness=int(light_level) # Use our global brightness value
+        brightness=get_light_level() # Use our global brightness value
     )
 
     # int(time.time()) % 2 will tick between 0 and 1 every second.
