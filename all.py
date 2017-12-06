@@ -18,7 +18,7 @@ Press Ctrl+C to exit!
 DISPLAY_BAR = True
 while True:
     light_level = int(int(light.light())/255)
-    print(light_level)
+    print(light.light())
     time.sleep(0.4)
 while True:
     scrollphathd.clear()
