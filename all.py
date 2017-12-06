@@ -8,10 +8,8 @@ from scrollphathd.fonts import font3x5
 from envirophat import light, weather, motion, analog
 
 print("""
-Scroll pHAT HD: Clock
-Displays hours and minutes in text,
-plus a seconds progress bar.
-Press Ctrl+C to exit!
+Slice-Of-Pi
+Made by @electric-blue-green
 """)
 
 ##  --  Scrollphat Setup
