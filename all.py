@@ -45,7 +45,7 @@ def find_light_level():
 
 while True:
     scrollphathd.clear()
-
+    print(get_light_level())
     # Grab the "seconds" component of the current time
     # and convert it to a range from 0.0 to 1.0
     float_sec = (time.time() % 60) / 59.0
@@ -64,7 +64,7 @@ while True:
     if DISPLAY_BAR:
         # Step through 15 pixels to draw the seconds bar
         for y in range(15):
-            BRIGHTNESS = find_light_level()
+            BRIGHTNESS = 1
             # For each pixel, we figure out its brightness by
             # seeing how much of "seconds_progress" is left to draw
             # If it's greater than 1 (full brightness) then we just display 1.
@@ -91,7 +91,7 @@ while True:
         x=0, # Align to the left of the buffer
         y=0, # Align to the top of the buffer
         font=font3x5, # Use the font3x5 font we imported above
-        brightness=findt_light_level() # Use our global brightness value
+        brightness=find_light_level() # Use our global brightness value
     )
 
     # int(time.time()) % 2 will tick between 0 and 1 every second.
