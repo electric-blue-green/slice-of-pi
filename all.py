@@ -21,7 +21,7 @@ def find_light_level():
         light_level = 0.05
     elif int(light.light()) < 50:
         light_level = 0.1
-    elif int(light.light()) < 100:
+    elif int(light.light()) < 150:
         light_level = 0.2
     elif int(light.light()) < 200:
         light_level = 0.3
