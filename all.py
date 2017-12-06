@@ -19,7 +19,7 @@ DISPLAY_BAR = True
 while True:
     if 100 < int(light.light()) < 1000:
         BRIGHTNESS = int(int(light.light())/100)
-        print(BRIGHTNESS)
+        print(light.light(), " : ", BRIGHTNESS)
     else:
         BRIGHTNESS = 1
 while True:
