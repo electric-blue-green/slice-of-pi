@@ -45,7 +45,7 @@ def find_light_level():
 
 while True:
     scrollphathd.clear()
-    print(find_light_level())
+    #print(find_light_level())
     # Grab the "seconds" component of the current time
     # and convert it to a range from 0.0 to 1.0
     float_sec = (time.time() % 60) / 59.0
