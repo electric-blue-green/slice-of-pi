@@ -15,10 +15,10 @@ Press Ctrl+C to exit!
 
 ##  --  Scrollphat Setup
 DISPLAY_BAR = True
-while True:
-    if int(light.light()) < 1000:
-        BRIGHTNESS = int(int(light.light())/1000)
-    else:
+#while True:
+    #if int(light.light()) < 1000:
+        #BRIGHTNESS = int(int(light.light())/1000)
+    #else:
         BRIGHTNESS = 1
 while True:
     scrollphathd.clear()
