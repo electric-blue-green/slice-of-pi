@@ -4,7 +4,7 @@
 import time
 
 import scrollphathd
-from scrollphathd.fonts import font5x5
+from scrollphathd.fonts import font3x5
 from envirophat import light, weather, motion, analog
 
 print("""
