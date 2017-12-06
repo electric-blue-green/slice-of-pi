@@ -16,7 +16,7 @@ Press Ctrl+C to exit!
 
 ##  --  Scrollphat Setup
 DISPLAY_BAR = True
-def find_light_level()
+def find_light_level():
     if int(light.light()) < 10:
         light_level = 0.05
     elif int(light.light()) < 50:
