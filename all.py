@@ -49,7 +49,7 @@ def disp_switch():
         time.sleep
         return disp
 
-while disp_switch() = 0:
+while disp_switch() == 0:
     scrollphathd.clear()
     #print(find_light_level())
     # Grab the "seconds" component of the current time
