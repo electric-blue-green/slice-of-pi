@@ -89,7 +89,7 @@ while True:
         x=0, # Align to the left of the buffer
         y=0, # Align to the top of the buffer
         font=font3x5, # Use the font3x5 font we imported above
-        brightness=light_level # Use our global brightness value
+        brightness=int(light_level) # Use our global brightness value
     )
 
     # int(time.time()) % 2 will tick between 0 and 1 every second.
