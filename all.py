@@ -41,7 +41,6 @@ while True:
         light_level = 1
     else:
         light_level = 1
-    print(light_level)
 
 while True:
     scrollphathd.clear()
@@ -84,6 +83,7 @@ while True:
         scrollphathd.set_pixel(int(seconds_progress), 6, BRIGHTNESS)
 
     # Display the time (HH:MM) in a 5x5 pixel font
+    print(light_level)
     scrollphathd.write_string(
         time.strftime("%H:%M"),
         x=0, # Align to the left of the buffer
