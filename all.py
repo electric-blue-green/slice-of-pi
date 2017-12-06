@@ -41,7 +41,15 @@ def find_light_level():
         light_level = 1
     return light_level
 
-while True:
+def disp_switch():
+    while True:
+        disp = 0 # TIME
+        time.sleep(3)
+        disp = 1 # DATE
+        time.sleep
+        return disp
+
+while disp_switch() = 0:
     scrollphathd.clear()
     #print(find_light_level())
     # Grab the "seconds" component of the current time
