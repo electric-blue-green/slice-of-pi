@@ -85,7 +85,7 @@ while True:
         scrollphathd.set_pixel(int(seconds_progress), 6, find_light_level())
 
     # Display the time (HH:MM) in a 5x5 pixel font
-    print(find_light_level())
+    #print(find_light_level())
     scrollphathd.write_string(
         time.strftime("%H:%M"),
         x=0, # Align to the left of the buffer
