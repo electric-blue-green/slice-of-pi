@@ -24,19 +24,19 @@ def find_light_level():
     elif int(light.light()) < 150:
         light_level = 0.2
     elif int(light.light()) < 200:
-        light_level = 0.3
+        light_level = 0.25
     elif int(light.light()) < 400:
-        light_level = 0.4
+        light_level = 0.3
     elif int(light.light()) < 800:
-        light_level = 0.5
+        light_level = 0.4
     elif int(light.light()) < 1200:
-        light_level = 0.6
+        light_level = 0.5
     elif int(light.light()) < 2000:
-        light_level = 0.7
+        light_level = 0.6
     elif int(light.light()) < 3000:
-        light_level = 0.8
+        light_level = 0.7
     elif int(light.light()) < 5000:
-        light_level = 0.9
+        light_level = 0.8
     elif int(light.light()) < 10000:
         light_level = 1
     else:
