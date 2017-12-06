@@ -41,7 +41,7 @@ def find_light_level():
         light_level = 1
     else:
         light_level = 1
-    return
+    return light_level
 
 while True:
     scrollphathd.clear()
