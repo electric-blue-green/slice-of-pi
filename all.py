@@ -41,6 +41,7 @@ while True:
         light_level = 1
     else:
         light_level = 1
+    return
 
 while True:
     scrollphathd.clear()
