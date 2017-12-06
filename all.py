@@ -19,7 +19,7 @@ DISPLAY_BAR = True
     #if int(light.light()) < 1000:
         #BRIGHTNESS = int(int(light.light())/1000)
     #else:
-        BRIGHTNESS = 1
+BRIGHTNESS = 1
 while True:
     scrollphathd.clear()
     float_sec = (time.time() % 60) / 59.0               #   Seconds
