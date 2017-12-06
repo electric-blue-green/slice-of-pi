@@ -17,7 +17,9 @@ Press Ctrl+C to exit!
 ##  --  Scrollphat Setup
 DISPLAY_BAR = True
 while True:
-    BRIGHTNESS = int(int(light.light())/255)
+    light_level = int(int(light.light())/255)
+    print(light_level)
+    sleep(0.4)
 while True:
     scrollphathd.clear()
 
@@ -64,7 +66,7 @@ while True:
         x=0, # Align to the left of the buffer
         y=0, # Align to the top of the buffer
         font=font3x5, # Use the font3x5 font we imported above
-        brightness=BRIGHTNESS # Use our global brightness value
+        brightness=light_level # Use our global brightness value
     )
 
     # int(time.time()) % 2 will tick between 0 and 1 every second.
