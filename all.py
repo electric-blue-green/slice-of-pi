@@ -17,9 +17,31 @@ Press Ctrl+C to exit!
 ##  --  Scrollphat Setup
 DISPLAY_BAR = True
 while True:
-    light_level = int(int(light.light())/255)
-    print(light.light())
-    time.sleep(0.4)
+    if int(light.light()) < 10:
+        light_level = 0.05
+    elif int(light.light()) < 50:
+        light_level = 0.1
+    elif int(light.light()) < 100:
+        light_level = 0.2
+    elif int(light.light()) < 200:
+        light_level = 0.3
+    elif int(light.light()) < 400:
+        light_level = 0.4
+    elif int(light.light()) < 800:
+        light_level = 0.5
+    elif int(light.light()) < 1200:
+        light_level = 0.6
+    elif int(light.light()) < 2000:
+        light_level = 0.7
+    elif int(light.light()) < 3000:
+        light_level = 0.8
+    elif int(light.light()) < 5000:
+        light_level = 0.9
+    elif int(light.light()) < 10000:
+        light_level = 1
+    else:
+        light_level = 1
+
 while True:
     scrollphathd.clear()
 
