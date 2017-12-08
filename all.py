@@ -1,4 +1,4 @@
-
+#test
 #!/usr/bin/env python
 
 import time
@@ -14,6 +14,7 @@ Made by @electric-blue-green
 
 ##  --  Scrollphat Setup
 DISPLAY_BAR = True
+disp = 0
 def find_light_level():
     if int(light.light()) < 10:
         light_level = 0.05
@@ -40,17 +41,24 @@ def find_light_level():
     else:
         light_level = 1
     return light_level
+def main(disp):
+	get_disp_time(disp)
+def get_disp_time(disp):
+	disp = 0
+	time.sleep(3)
+	print("Disp set to time")
+	get_disp_date(disp)
+	return
+def get_disp_date(disp):
+	disp = 1
+	time.sleep(3)
+	print("Disp set to date")
+	get_disp_time(disp)
+#main(disp)
 
 while True:
-    if disp_switch() == 0:
-        while True:
-            disp = 0 # TIME
-            time.sleep(3)
-            disp = 1 # DATE
-            time.sleep
-            return disp
-
-    while disp_switch() == 0:
+    print("disp: ", disp)
+    while True:
         scrollphathd.clear()
         #print(find_light_level())
         # Grab the "seconds" component of the current time
@@ -116,5 +124,3 @@ while True:
         # 1/10th of a second is accurate enough for a simple clock though :D
         scrollphathd.show()
         time.sleep(0.01)
-
-
