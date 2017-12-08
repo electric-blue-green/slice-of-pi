@@ -128,40 +128,40 @@ def get_disp_date(disp):
 #main(disp)
 ##  Clock
 while True:
-    print("disp: ", disp)
-    while True:
+        ##  Testing
+        print(int(time.time()) % 1)
+        print("disp: ", disp)
+        ##   Clock
         scrollphathd.clear()
         #!debug#print(find_light_level())
-        # Convert seconds -> percent
+        ## Convert seconds -> percent
         float_sec = (time.time() % 60) / 59.0
-        # spread percentage over bar
+        ## spread percentage over bar
         seconds_progress = float_sec * 15
         if DISPLAY_BAR:
-            # draw seconds bar
+            ## draw seconds bar
             for y in range(15):
                 BRIGHTNESS = 1
-                # adjust brigtness
+                ## adjust brigtness
                 current_pixel = min(seconds_progress, 1)
                 scrollphathd.set_pixel(y + 1, 6, current_pixel * find_light_level())
                 seconds_progress -= 1
                 if seconds_progress <= 0:
                     break
         else:
-            # just a dot
+            ## just a dot
             scrollphathd.set_pixel(int(seconds_progress), 6, find_light_level())
-        # format time
+        ## format time
         scrollphathd.write_string(
             time.strftime("%H:%M"),
-            x=0, # Align to the left of the buffer
-            y=0, # Align to the top of the buffer
-            font=font3x5, # Use the font3x5 font we imported above
-            brightness=find_light_level() # Use our global brightness value
+            x=0, ## Align to the left of the buffer
+            y=0, ## Align to the top of the buffer
+            font=font3x5, ## Use the font3x5 font we imported above
+            brightness=find_light_level() ## Use our global brightness value
         )
-        # tick between 0 and 1
+        ## tick between 0 and 1
         if int(time.time()) % 2 == 0:
             scrollphathd.clear_rect(8, 0, 1, 5)
-        # Display, and refresh
+        ## Display, and refresh
         scrollphathd.show()
         time.sleep(0.01)
-while True:
-    print(int(time.time()) % 4)
