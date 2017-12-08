@@ -129,8 +129,10 @@ def get_disp_date(disp):
 ##  Clock
 while True:
         ##  Testingg
-        print(int(time.time()) % 4)
-        print("disp: ", disp)
+        if int(time.time() % 3) == 0:
+            print("0")
+        else:
+            print("1")
         ##   Clock
         scrollphathd.clear()
         #!debug#print(find_light_level())
