@@ -129,7 +129,7 @@ def get_disp_date(disp):
 ##  Clock
 while True:
         ##  Testing
-        print(int(time.time()) % 1)
+        print(int(time.time()) % 4)
         print("disp: ", disp)
         ##   Clock
         scrollphathd.clear()
