@@ -128,7 +128,7 @@ def get_disp_date(disp):
 #main(disp)
 ##  Clock
 while True:
-        ##  Testing
+        ##  Testingg
         print(int(time.time()) % 4)
         print("disp: ", disp)
         ##   Clock
