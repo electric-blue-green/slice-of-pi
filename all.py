@@ -128,12 +128,7 @@ def get_disp_date(disp):
 #main(disp)
 ##  Clock
 while True:
-        ##  Testingg
-        if int(time.time() % 3) == 0:
-            print("0")
-        else:
-            print("1")
-        ##   Clock
+    ##   Clock
         scrollphathd.clear()
         #!debug#print(find_light_level())
         ## Convert seconds -> percent
