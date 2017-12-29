@@ -136,7 +136,7 @@ def switch2():
     screen = 2
 
 ##  Main
-def clock()
+def clock():
     while True:
         scrollphathd.clear()
         #!debug#print(find_light_level())
@@ -173,4 +173,5 @@ def clock()
         time.sleep(0.01)
     time.sleep(3)
     break
+
 clock()
