@@ -122,11 +122,7 @@ def set_mode(event):
     elif event.name == "B":
         screen = 1
 ##  Main
-while True:
-    if screen == 0:
-        clock()
-    elif screen == 1:
-        date()
+
 
 def clock():
     while True:
@@ -167,3 +163,9 @@ def clock():
 def date():
     scrollphathd.write_string("date")
     scrollphathd.show()
+
+while True:
+    if screen == 0:
+        clock()
+    elif screen == 1:
+        date()
