@@ -113,14 +113,14 @@ def find_light_level():
     else:
         light_level = 1
     return light_level
-
-@touchphat.on_touch(["A", "B"])
-def set_mode(event):
-    global mode
-    if event.name == "A":
-        screen = 0
-    elif event.name == "B":
-        screen = 1
+while True:
+    @touchphat.on_touch(["A", "B"])
+    def set_mode(event):
+        global mode
+        if event.name == "A":
+            screen = 0
+        elif event.name == "B":
+            screen = 1
 ##  Main
 
 
