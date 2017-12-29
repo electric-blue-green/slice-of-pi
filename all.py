@@ -156,5 +156,3 @@ def clock():
 @touchphat.on_touch("B")
 def date():
     scrollphathd.clear()
-
-clock()
