@@ -112,14 +112,14 @@ def find_light_level():
     else:
         light_level = 1
     return light_level
-while True:
-    @touchphat.on_touch(["A", "B"])
-    def set_mode(event):
-        global mode
-        if event.name == "A":
-            clock()
-        elif event.name == "B":
-           date()
+
+@touchphat.on_touch(["A", "B"])
+def set_mode(event):
+    global mode
+    if event.name == "A":
+        clock()
+    elif event.name == "B":
+        date()
 ##  Main
 
 def clock():
