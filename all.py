@@ -112,11 +112,15 @@ def find_light_level():
     else:
         light_level = 1
     return light_level
-##  Disp Switch Def                     ! NOT WORKING
-screen = 1
-
+@touchphat.on_touch(["A", "B"])
+def set_mode(event):
+    global mode
+    if event.name == "A":
+        clock()
+    elif event.name == "B":
+        date()
 ##  Main
-@touchphat.on_touch("A")
+
 def clock():
     while True:
         scrollphathd.clear()
@@ -155,4 +159,5 @@ def clock():
 
 @touchphat.on_touch("B")
 def date():
-    scrollphathd.clear()
+    scrollphathd.write_string("date")
+    scrollphathd.show()
