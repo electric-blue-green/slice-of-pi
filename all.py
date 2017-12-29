@@ -168,6 +168,5 @@ while True:
                 time.sleep(0.01)
         time.sleep(3)
         break
-    while True:
-        while True:
-            touchphat.all_on()
+while True:
+    touchphat.all_on()
