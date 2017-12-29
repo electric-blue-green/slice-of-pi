@@ -114,14 +114,15 @@ def find_light_level():
         light_level = 1
     return light_level
 
-while True:
-    @touchphat.on_touch(["A", "B"])
-    def set_mode(event):
-        global mode
-        if event.name == "A":
-            screen = 0
-        elif event.name == "B":
-            screen = 1
+
+@touchphat.on_touch(["A", "B"])
+def set_mode(event):
+    global mode
+    if event.name == "A":
+        screen = 0
+    elif event.name == "B":
+        screen = 1
+    return
 ##  Main
 
 
@@ -165,7 +166,7 @@ def date():
     scrollphathd.show()
 
 while True:
-    if screen == 0:
+    if set_mode(event) = 0:
         clock()
-    elif screen == 1:
+    elif set_mode(event) = 1:
         date()
