@@ -162,8 +162,7 @@ def clock():
     time.sleep(0.01)
 
 def date():
-    scrollphathd.write_string(
-            time.strftime(("%b %d"),brightness=find_light_level())
+    scrollphathd.write_string(time.strftime(("%b %d"),brightness=find_light_level()))
     scrollphathd.scroll()
 
 while True:
