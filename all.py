@@ -11,6 +11,7 @@ Made by @electric-blue-green
 ##  Var setup
 DISPLAY_BAR = True
 disp = 0
+screen = 0
 ## Light Level Def
 def find_light_level():
     if int(light.light()) < 3:
@@ -117,10 +118,15 @@ def find_light_level():
 def set_mode(event):
     global mode
     if event.name == "A":
-        clock()
+        screen = 0
     elif event.name == "B":
-        date()
+        screen = 1
 ##  Main
+while True:
+    if screen == 0:
+        clock()
+    else if screen == 1:
+        date()
 
 def clock():
     while True:
