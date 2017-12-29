@@ -127,12 +127,20 @@ def get_disp_date(disp):
 	print("Disp set to date")
 	get_disp_time(disp)
 #main(disp)
+screen = 1
+@touchphat.on_touch("A")
+def switch1():
+    screen = 1
+@touchphat.on_touch("B")
+def switch2():
+    screen = 2
+
 ##  Main
 while True:
-    while True:
         ## Clock
         while True:
             while True:
+                print(screen)
                 scrollphathd.clear()
                 #!debug#print(find_light_level())
                 ## Convert seconds -> percent
@@ -168,5 +176,3 @@ while True:
                 time.sleep(0.01)
         time.sleep(3)
         break
-while True:
-    touchphat.all_on()
