@@ -116,6 +116,7 @@ def find_light_level():
 screen = 1
 
 ##  Main
+@touchphat.on_touch("A")
 def clock():
     while True:
         scrollphathd.clear()
@@ -152,5 +153,7 @@ def clock():
         scrollphathd.show()
         time.sleep(0.01)
 
-
+@touchphat.on_touch("B")
+def date():
+    scrollphathd.clear()
 clock()
