@@ -171,7 +171,6 @@ def clock():
         ## Display, and refresh
         scrollphathd.show()
         time.sleep(0.01)
-    time.sleep(3)
-    break
+
 
 clock()
