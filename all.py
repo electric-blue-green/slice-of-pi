@@ -166,7 +166,7 @@ def date():
     scrollphathd.show()
 
 while True:
-    if screen = 0:
+    if screen == 0:
         clock()
-    elif screen = 1:
+    elif screen == 1:
         date()
