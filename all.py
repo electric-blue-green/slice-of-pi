@@ -113,6 +113,7 @@ def find_light_level():
     else:
         light_level = 1
     return light_level
+
 while True:
     @touchphat.on_touch(["A", "B"])
     def set_mode(event):
