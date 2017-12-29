@@ -125,7 +125,7 @@ def set_mode(event):
 while True:
     if screen == 0:
         clock()
-    else if screen == 1:
+    elif screen == 1:
         date()
 
 def clock():
