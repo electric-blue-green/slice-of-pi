@@ -120,8 +120,10 @@ def set_mode(event):
     global screen
     if event.name == "A":
         screen = 0
+        print("time")
     elif event.name == "B":
         screen = 1
+        print("date")
     return
 ##  Main
 
