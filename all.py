@@ -113,27 +113,7 @@ def find_light_level():
         light_level = 1
     return light_level
 ##  Disp Switch Def                     ! NOT WORKING
-def main(disp):
-    get_disp_time(disp)
-def get_disp_time(disp):
-    disp = 0
-    time.sleep(3)
-    print("Disp set to time")
-    get_disp_date(disp)
-    return
-def get_disp_date(disp):
-	disp = 1
-	time.sleep(3)
-	print("Disp set to date")
-	get_disp_time(disp)
-#main(disp)
 screen = 1
-@touchphat.on_touch("A")
-def switch1():
-    screen = 1
-@touchphat.on_touch("B")
-def switch2():
-    screen = 2
 
 ##  Main
 def clock():
