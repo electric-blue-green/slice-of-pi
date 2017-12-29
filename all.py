@@ -132,7 +132,7 @@ while True:
     while True:
         ## Clock
         while True:
-            while True
+            while True:
                 scrollphathd.clear()
                 #!debug#print(find_light_level())
                 ## Convert seconds -> percent
