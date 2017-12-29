@@ -162,7 +162,7 @@ def clock():
     time.sleep(0.01)
 
 def date():
-    scrollphathd.write_string("date")
+    scrollphathd.write_string(time.strftime("%b %d"))
     scrollphathd.show()
 
 while True:
