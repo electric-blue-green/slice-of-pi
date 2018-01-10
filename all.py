@@ -121,9 +121,11 @@ def set_mode(event):
     if event.name == "A":
         screen = 0
         print("time")
+        scrollphathd.clear()
     elif event.name == "B":
         screen = 1
         print("date")
+        scrollphathd.clear()
     return
 ##  Main
 
